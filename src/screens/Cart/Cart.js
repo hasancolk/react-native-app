@@ -18,7 +18,6 @@ import colors from '../../consts/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import categories from '../../consts/categories';
 import shoppingList from '../../consts/shoppingList';
-import products from '../../consts/products';
 
 const width = Dimensions.get('screen').width / 2 - 30;
 

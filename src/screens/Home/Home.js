@@ -17,7 +17,6 @@ import {
 import colors from '../../consts/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import categories from '../../consts/categories';
-import products from '../../consts/products';
 import shoppingList from '../../consts/shoppingList';
 import { color } from 'react-native-reanimated';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -40,7 +39,6 @@ const Home = ({ navigation }) => {
 
   const [categoryIndex, setCategoryIndex] = React.useState(0);
   const [productIndex, setProductIndex] = React.useState(0);
-  //const shoppingList = [];
 
 
   const CategoryList = () => {
@@ -94,8 +92,7 @@ const Home = ({ navigation }) => {
          <View>
           <Button title= "Add To Cart" onPress={()=>
           {
-            shoppingList.push(category.id);
-            alert(`Eklenen ürünler : ${shoppingList}`);
+            shoppingList.push(category);
           }
           } />
         </View>
@@ -104,8 +101,6 @@ const Home = ({ navigation }) => {
       </TouchableOpacity>
     );
   };
-
-//products[shoppingList[0]].name
 
   return (
     <SafeAreaView

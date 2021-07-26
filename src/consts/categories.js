@@ -6,47 +6,38 @@ const categories = [
 
     products: [
       {
-        id: 0,
         name: 'Toast Bread',
         image: require('../assets/toast.jpg'),
       },
       {
-        id: 1,
         name: 'Rye Bread',
         image: require('../assets/rye.jpg'),
       },
       {
-        id: 2,
         name: 'Lentil Soup',
         image: require('../assets/lentil.jpg'),
       },
       {
-        id: 3,
         name: 'Tomato Soup',
         image: require('../assets/tomatoSoup.png'),
       },
       {
-        id: 4,
         name: 'Tuna Conserve',
         image: require('../assets/tuna.jpg'),
       },
       {
-        id: 5,
         name: 'Pickled Cucumbers',
         image: require('../assets/cucumbers.jpg'),
       },
       {
-        id: 6,
         name: 'Chickpea',
         image: require('../assets/chickpea.jpg'),
       },
       {
-        id: 7,
         name: 'Kraft Macaroni Cheese',
         image: require('../assets/kraft.jpg'),
       },
       {
-        id: 8,
         name: 'Spaghetti',
         image: require('../assets/spaghetti.jpg'),
       },
@@ -58,42 +49,34 @@ const categories = [
 
     products: [
       {
-        id: 9,
         name: 'Beef',
         image: require('../assets/meat.jpg'),
       },
       {
-        id: 10,
         name: 'Ground Beef',
         image: require('../assets/ground-beef.jpg'),
       },
       {
-        id: 11,
         name: 'Chicken Breast',
         image: require('../assets/chicken.jpg'),
       },
       {
-        id: 12,
         name: 'Bacon',
         image: require('../assets/bacon.jpg'),
       },
       {
-        id: 13,
         name: 'Pizza',
         image: require('../assets/pizza.jpg'),
       },
       {
-        id: 14,
         name: 'French Fries',
         image: require('../assets/french.png'),
       },
       {
-        id: 15,
         name: 'Cheddar Cheese',
         image: require('../assets/cheddar.jpg'),
       },
       {
-        id: 16,
         name: 'Beef Sausage',
         image: require('../assets/beef.jpg'),
       },
