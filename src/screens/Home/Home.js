@@ -21,25 +21,23 @@ import shoppingList from '../../consts/shoppingList';
 import { color } from 'react-native-reanimated';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-const width = Dimensions.get('screen').width / 2 - 30;
+const width = Dimensions.get('screen').width / 2 - 34;
 
 const Home = ({ navigation }) => {
   const categoriess = [
     'Food ',
-    ' Meat & Frozen Food',
-    ' Junk Food ',
-    ' Dessert ',
-    ' Vegatable & Fruit ',
-    ' Water & Drink ',
-    ' Personal Care ',
-    ' Pet Shop ',
-    ' Mom&Baby ',
-    ' Electronic ',
+    '   Meat & Frozen Food',
+    '   Junk Food ',
+    '   Dessert ',
+    '   Vegatable & Fruit ',
+    '   Water & Drink ',
+    '   Personal Care ',
+    '   Pet Shop ',
+    '   Mom&Baby ',
+    '   Electronic ',
   ];
 
   const [categoryIndex, setCategoryIndex] = React.useState(0);
-  const [productIndex, setProductIndex] = React.useState(0);
-
 
   const CategoryList = () => {
     return (
@@ -66,10 +64,9 @@ const Home = ({ navigation }) => {
   };
 
 
-  const Card = ({ category }) => { // category parametresi products'a esit.
+  const Card = ({ category }) => { 
     return (
       <TouchableOpacity
-       // onPress={() => navigation.navigate('Cart', category)}
        >
         <View style={style.card}>
           <View style={{ alignItems: 'flex-end' }}></View>
@@ -82,17 +79,20 @@ const Home = ({ navigation }) => {
           <Text
             style={{
               fontWeight: 'bold',
-              fontSize: 18,
-              marginTop: 35,
-              color: colors.primary,
-              marginLeft: 35,
+              fontSize: 15,
+              marginTop: 17,
+              color: colors.dark,
+              marginLeft: 25,
             }}>
             {category.name}
+
+
           </Text>
          <View>
           <Button title= "Add To Cart" onPress={()=>
           {
             shoppingList.push(category);
+
           }
           } />
         </View>
@@ -107,7 +107,7 @@ const Home = ({ navigation }) => {
       style={{
         flex: 1,
         paddingHorizontal: 20,
-        backgroundColor: colors.primary,
+        backgroundColor: colors.blueviolet,
       }}>
       <View style={style.header}>
         <View>
@@ -116,7 +116,7 @@ const Home = ({ navigation }) => {
             size={24}
             onPress={() => navigation.goBack()}
           /> */}
-          <Text style={style.textStyle1}>Welcome to</Text>
+          
           <Text style={style.textStyle2}>Shopping List</Text>
         </View>
         <Icon
@@ -163,16 +163,13 @@ const style = StyleSheet.create({
     marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
-  },
-  textStyle1: {
-    fontSize: 23,
-    fontWeight: 'bold',
-    color: colors.white,
+
   },
   textStyle2: {
-    fontSize: 38,
+    fontSize: 32,
     fontWeight: 'bold',
     color: colors.white,
+    marginTop: 22,
   },
   searchContainer: {
     height: 50,
@@ -202,7 +199,7 @@ const style = StyleSheet.create({
     marginTop: 30,
     marginBottom: 20,
     justifyContent: 'space-between',
-    height: 50,
+    height: 30,
   },
   categoryText: {
     fontSize: 17,
@@ -217,13 +214,13 @@ const style = StyleSheet.create({
   },
   card: {
     height: 225,
-    backgroundColor: colors.grey,
+    backgroundColor: colors.white,
     width,
     marginHorizontal: 2,
     borderRadius: 10,
     marginBottom: 20,
     padding: 15,
-    borderRadius: 30,
+    borderRadius: 40,
   },
 });
 

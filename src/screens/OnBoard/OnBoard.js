@@ -6,73 +6,32 @@ import {
   StatusBar,
   Text,
   TouchableOpacity,
+  Image,
 } from 'react-native';
 import colors from '../../consts/colors';
 
-// const image = {uri: "https://i.pinimg.com/564x/84/12/83/8412830fe8d0445b4623d1e20d103864.jpg"}
+const image = {uri: "https://i.pinimg.com/originals/1e/35/b8/1e35b89ff91df890c3dd693246f15243.jpg"}
 
 const OnBoard = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
-      <StatusBar />
-      <ImageBackground style={{flex: 1, backgroundColor: colors.primary}}>
+      {/* <StatusBar /> */}
+      <ImageBackground style={{flex: 1, 
+                               backgroundColor: colors.blue
+                               }} source = {image}>
         <View style={style.details}>
-          
-          <Text
-            style={{
-              textAlign: 'center',
-              marginTop: 80,
-              color: colors.white,
-              fontSize: 35,
-              fontWeight: 'bold',
-            }}>
-            About Us
-          </Text>
-          <Text
-            style={{
-              color: colors.white,
-              marginTop: 30,
-              fontSize: 23,
-              marginLeft: 158,
-            }}>
-            Hello
-          </Text>
-          <Text
-            style={{
-              color: colors.white,
-              marginTop: 100,
-              fontSize: 19,
-              marginLeft: 130,
-            }}>
-            Gizem Coşkun
-          </Text>
-          <Text
-            style={{
-              color: colors.white,
-              marginTop: 6,
-              fontSize: 19,
-              marginLeft: 130,
-            }}>
-            Kader Sutlu
-          </Text>
-          <Text
-            style={{
-              color: colors.white,
-              marginTop: 6,
-              fontSize: 19,
-              marginLeft: 130,
-            }}>
-            Hasan Çolak
-          </Text>
-          <Text
-            style={{
-              color: colors.white,
-              marginTop: 6,
-              fontSize: 19,
-              marginLeft: 130,
-            }}>
-            Melike Divdiv
-          </Text>
+          {/* <Image
+            style={{height: 150}}
+            source={require('../../assets/ekonsoft-logo.jpg')}
+          /> */}
+          <Text style={style.about}>Created By</Text>
+          {/* <Image style={style.logo} source={require('../../assets/ekonsoft-icon.png')} /> */}
+
+          <Text style={style.textName}>Gizem Coşkun</Text>
+
+          <Text style={style.textName}>Hasan Çolak</Text>
+          <Text style={style.textName}>Melike Divdiv</Text>
+          <Text style={style.textName}>Kader Sutlu</Text>
           <TouchableOpacity
             activeOpacity={0.8}
             onPress={() => navigation.navigate('Home')}>
@@ -104,11 +63,34 @@ const style = StyleSheet.create({
   btn: {
     height: 50,
     width: 150,
-    backgroundColor: colors.dark,
-    marginTop: 170,
+    backgroundColor: colors.blueviolet,
+    marginTop: 160,
     borderRadius: 30,
     justifyContent: 'center',
     marginHorizontal: 120,
+  },
+  textName: {
+    color: colors.white,
+    marginTop: 15,
+    fontSize: 19,
+    marginLeft: 130,
+    height: 21,
+  
+
+  },
+  about: {
+    textAlign: 'center',
+    marginTop: 258,
+    color: colors.white,
+    fontSize: 35,
+    fontWeight: 'bold',
+    marginLeft: 8,
+    marginBottom: 20,
+  },
+  logo: {
+    width: 60,
+    height: 60,
+    marginLeft: 180,
   },
 });
 

@@ -17,40 +17,8 @@ import {
 import colors from '../../consts/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Cart from '../Cart/Cart';
-import foodProducts from '../../consts/foodProducts';
 import categories from '../../consts/categories';
-import meat from '../../consts/meat';
 
-// const CategoryDetails = ({navigation, route}) => {
-//   const categories = route.params;
-//   return (
-//     <SafeAreaView style={{flex: 1, backgroundColor: colors.white}}>
-//       <View style={style.header}>
-//         <Icon name="arrow-left" size={24} onPress={() => navigation.goBack()} />
-//         <Icon name="shopping-cart" size={24} />
-//       </View>
-//       <View style = {style.imageContainer}>
-//         <Image source = {categories.image} style = {{resizeMode: 'contain', flex:1}} />
-//       </View>
-//       <View style = {style.imageContainer}>
-//         <Image source = {categories.image} style = {{resizeMode: 'contain', flex:1}} />
-//       </View>
-//       <View style = {style.imageContainer}>
-//         <Image source = {categories.gizem} style = {{resizeMode: 'contain', flex:1}} />
-//       </View>
-//       <View style = {style.imageContainer}>
-//         <Image source = {categories.image} style = {{resizeMode: 'contain', flex:1}} />
-//       </View>
-//       <View style = {style.imageContainer}>
-//         <Image source = {categories.image} style = {{resizeMode: 'contain', flex:1}} />
-//       </View>
-
-
-//     </SafeAreaView>
-//   );
-// };
-
-// const width = Dimensions.get('screen').width / 2 - 30;
 
 const width = Dimensions.get('screen').width / 2 - 30;
 
@@ -77,7 +45,7 @@ const CategoryDetails = ({navigation}) => {
               fontWeight: 'bold',
               fontSize: 18,
               marginTop: 35,
-              color: colors.primary,
+              color: colors.silver,
               marginLeft: 35,
             }}>
             {category.name}
@@ -195,7 +163,7 @@ const style = StyleSheet.create({
   },
   card: {
     height: 225,
-    backgroundColor: colors.grey,
+    backgroundColor: colors.white,
     width,
     marginHorizontal: 2,
     borderRadius: 10,

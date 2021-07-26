@@ -16,37 +16,53 @@ import {
 
 import colors from '../../consts/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import categories from '../../consts/categories';
 import shoppingList from '../../consts/shoppingList';
 
 const width = Dimensions.get('screen').width / 2 - 30;
 
 const Cart = ({navigation}) => {
-  // const categoriess = ['Food', 'Drinks', 'Desserts', 'Home', 'Electronic'];
-  const [categoryIndex, setCategoryIndex] = React.useState(0);
+  
+  const [productIndex, setProductIndex] = React.useState(0);
   
 
-  const Card = ({category}) => {
+  const Card = ({product}) => {
     return (
-      <View style={style.card}>
-        <View style={{alignItems: 'flex-end'}}></View>
-        <View style={{height: 100, alignItems: 'center'}}>
-          <Image
-            style={{flex: 1, resizeMode: 'contain'}}
-            source={category.image}
-          />
+      
+    <TouchableOpacity
+       >
+        <View style={style.card}>
+          <View style={{ alignItems: 'flex-end' }}></View>
+          <View style={{ height: 100, alignItems: 'center' }}>
+            <Image
+              style={{ flex: 1, resizeMode: 'contain' }} 
+              source={product.image}
+            />
+          </View>
+          <Text
+            style={{
+              fontWeight: 'bold',
+              fontSize: 15,
+              marginTop: 17,
+              color: colors.dark,
+              marginLeft: 25,
+            }}>
+            {product.name}
+
+
+          </Text>
+         <View>
+          <Button title= "Remove" onPress={()=>
+          {
+            let sonuc = shoppingList.indexOf(product);
+            setProductIndex(sonuc);
+            delete shoppingList[sonuc];
+          }
+          } />
         </View>
-        <Text
-          style={{
-            fontWeight: 'bold',
-            fontSize: 18,
-            marginTop: 35,
-            color: colors.primary,
-            marginLeft: 35,
-          }}>
-          {category.name}
-        </Text>
-      </View>
+       </View>
+
+      </TouchableOpacity>
+      
     );
   };
 
@@ -56,7 +72,7 @@ const Cart = ({navigation}) => {
       style={{
         flex: 1,
         paddingHorizontal: 20,
-        backgroundColor: colors.primary,
+        backgroundColor: colors.blueviolet,
       }}>
       <View style={style.header}>
         <View>
@@ -94,7 +110,7 @@ const Cart = ({navigation}) => {
         data={shoppingList}
         renderItem={({ item }) => {
           
-          return <Card category={item} />;
+          return <Card product={item} />;
         }}
       />
       
@@ -121,7 +137,7 @@ const style = StyleSheet.create({
     color: colors.white,
   },
   searchContainer: {
-    height: 50,
+    height: 45,
     backgroundColor: colors.white,
     borderRadius: 30,
     flex: 1,
@@ -129,7 +145,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: 'bold',
     color: colors.orange,
     flex: 1,
@@ -161,15 +177,24 @@ const style = StyleSheet.create({
     borderColor: 'pink',
   },
   card: {
-    height: 225,
-    backgroundColor: colors.grey,
+    height: 225,    //buton boyutu 
+    backgroundColor: colors.white,
     width,
     marginHorizontal: 2,
     borderRadius: 10,
     marginBottom: 20,
     padding: 15,
     borderRadius: 30,
+  
+  
   },
+  imageContainer: {
+    flex: 0.5,
+    marginTop: 10,
+    justifyContent: 'center',
+  },
+
+
 });
 
 export default Cart;

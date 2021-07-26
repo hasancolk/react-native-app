@@ -1,5 +1,4 @@
 const categories = [
-  
   {
     name: 'Food',
     image: require('../assets/food.jpg'),
@@ -14,6 +13,14 @@ const categories = [
         image: require('../assets/rye.jpg'),
       },
       {
+        name: 'Lavash',
+        image: require('../assets/lavash.jpg'),
+      },
+      {
+        name: 'Grissini',
+        image: require('../assets/gris.jpg'),
+      },
+      {
         name: 'Lentil Soup',
         image: require('../assets/lentil.jpg'),
       },
@@ -26,6 +33,10 @@ const categories = [
         image: require('../assets/tuna.jpg'),
       },
       {
+        name: 'Sweet Peas',
+        image: require('../assets/sweet.jpeg'),
+      },
+      {
         name: 'Pickled Cucumbers',
         image: require('../assets/cucumbers.jpg'),
       },
@@ -34,13 +45,40 @@ const categories = [
         image: require('../assets/chickpea.jpg'),
       },
       {
-        name: 'Kraft Macaroni Cheese',
+        name: 'Kraft Macaroni',
         image: require('../assets/kraft.jpg'),
       },
       {
         name: 'Spaghetti',
         image: require('../assets/spaghetti.jpg'),
       },
+      {
+        name: 'Noodle',
+        image: require('../assets/noodle.jpeg'),
+      },
+      {
+        name: 'Basmeti Rice',
+        image: require('../assets/rice.jpg'),
+      },
+      {
+        name: 'Peanut Butter',
+        image: require('../assets/peanut.jpg'),
+      },
+      {
+        name: 'Nutella',
+        image: require('../assets/nutella.jpg'),
+      },
+      {
+        name: 'Heinz Mayonnasie',
+        image: require('../assets/mayo.jpeg'),
+      },
+      {
+        name: 'Heinz Ketchup',
+        image: require('../assets/ketchup.jpg'),
+      },
+
+ 
+
     ],
   },
   {
@@ -57,20 +95,39 @@ const categories = [
         image: require('../assets/ground-beef.jpg'),
       },
       {
-        name: 'Chicken Breast',
-        image: require('../assets/chicken.jpg'),
+        name: 'Beef Carpaccio Sliced',
+        image: require('../assets/carpaccio.png'),
       },
+
       {
         name: 'Bacon',
         image: require('../assets/bacon.jpg'),
       },
       {
+        name: 'Chicken Breast',
+        image: require('../assets/chicken.jpg'),
+      },
+      {
+        name: 'Chicken Wings',
+        image: require('../assets/wings.jpg'),
+      },
+
+      {
         name: 'Pizza',
         image: require('../assets/pizza.jpg'),
       },
+
       {
         name: 'French Fries',
         image: require('../assets/french.png'),
+      },
+      {
+        name: 'Veggie Fingers',
+        image: require('../assets/veggie.webp'),
+      },
+      {
+        name: 'Mini Samosa',
+        image: require('../assets/samosa.jpg'),
       },
       {
         name: 'Cheddar Cheese',
@@ -87,7 +144,7 @@ const categories = [
     image: require('../assets/junkFood.jpg'),
     products: [
       {
-        name: 'Chocolate',
+        name: 'Toblerone',
         image: require('../assets/choco.png'),
       },
       {
@@ -95,8 +152,37 @@ const categories = [
         image: require('../assets/darkChoco.jpg'),
       },
       {
-        name: 'Chips',
+        name: "M & M's ",
+        image: require('../assets/m-m.jpg'),
+      },
+      {
+        name: 'Oreo',
+        image: require('../assets/oreo.jpg'),
+      },
+      {
+        name: 'Lays Classic',
         image: require('../assets/chips.jpg'),
+      },
+      {
+        name: 'Lays Ketchup',
+        image: require('../assets/laysketchup.jpg'),
+      },
+      {
+        name: 'Doritos Nacho',
+        image: require('../assets/nacho.jpg'),
+      },
+      {
+        name: 'Doritos Taco',
+        image: require('../assets/taco.jpeg'),
+      },
+      
+      {
+        name: 'Pringles Original',
+        image: require('../assets/pringles.jpg'),
+      },
+      {
+        name: 'Pringles Paprika',
+        image: require('../assets/paprika.jpg'),
       },
       {
         name: 'Pretzel',
@@ -105,6 +191,14 @@ const categories = [
       {
         name: 'Mixed Nuts',
         image: require('../assets/mixed.jpg'),
+      },
+      {
+        name: 'Jujy Fruits',
+        image: require('../assets/jujy.jpg'),
+      },
+      {
+        name: 'Skittles',
+        image: require('../assets/skittles.jpg'),
       },
     ],
   },
@@ -119,6 +213,22 @@ const categories = [
       {
         name: 'Profiterole',
         image: require('../assets/Profiterole.png'),
+      },
+      {
+        name: 'Panna Cotta',
+        image: require('../assets/panna.jpg'),
+      },
+      {
+        name: 'Brownie Baking Mix',
+        image: require('../assets/browni.jpg'),
+      },
+      {
+        name: 'Frozen Yogurt',
+        image: require('../assets/frozenyogurt.jpg'),
+      },
+      {
+        name: 'Chocolate Cake',
+        image: require('../assets/choco-cake.jpg'),
       },
       {
         name: 'Parfait',
@@ -151,6 +261,48 @@ const categories = [
         image: require('../assets/potato.jpg'),
       },
       {
+        name: 'Carrot',
+        image: require('../assets/carrot.jpg'),
+      },
+      {
+        name: 'Onion',
+        image: require('../assets/onion.jpg'),
+      },
+      {
+        name: 'Broccoli',
+        image: require('../assets/broccoli.jpg'),
+      },
+      {
+        name: 'Parsley',
+        image: require('../assets/parsley.jpg'),
+      },
+      {
+        name: 'Mushrooms',
+        image: require('../assets/mushrooms.jpg'),
+      },
+      {
+        name: 'Foglia Sublime',
+        image: require('../assets/foglia.jpg'),
+      },
+      {
+        name: 'Avocado',
+        image: require('../assets/avocado.jpg'),
+      },
+      {
+        name: 'Kiwi',
+        image: require('../assets/kiwi.jpg'),
+      },
+      {
+        name: 'Chaunsa Mango',
+        image: require('../assets/chaunsa-mango.jpg'),
+      },
+
+      {
+        name: 'Orange',
+        image: require('../assets/orange.jpg'),
+      },
+        
+      {
         name: 'Pineapple',
         image: require('../assets/pineapple.jpg'),
       },
@@ -177,6 +329,10 @@ const categories = [
         image: require('../assets/water.jpg'),
       },
       {
+        name: 'Water 5L',
+        image: require('../assets/5l.jpg'),
+      },
+      {
         name: 'Pepsi',
         image: require('../assets/pepsi.jpg'),
       },
@@ -192,10 +348,25 @@ const categories = [
         name: 'Milk',
         image: require('../assets/milk.png'),
       },
+
       {
-        name: 'Nescafe',
-        image: require('../assets/nescafe.jpg'),
+        name: 'Nescafe Xpress Orginal',
+        image: require('../assets/xpress.jpg'),
       },
+      {
+        name: 'Nescafe Xpress Americano',
+        image: require('../assets/americano.jpg'),
+      },
+
+      {
+        name: 'Schweppes Zero Tonic',
+        image: require('../assets/zero-tonic.jpg'),
+      },
+      {
+        name: 'Schweppes Lemon',
+        image: require('../assets/shweppes-lemon.jpg'),
+      },
+
       {
         name: 'Lemonade',
         image: require('../assets/lemonede.jpg'),
@@ -204,15 +375,24 @@ const categories = [
         name: 'Ice Tea',
         image: require('../assets/ice.jpg'),
       },
+      {
+        name: 'Redbull',
+        image: require('../assets/redbull.jpg'),
+      },
     ],
   },
   {
     name: 'Personal Care',
     image: require('../assets/personal.jpg'),
     products: [
+
       {
-        name: 'Cotton',
-        image: require('../assets/cotton.jpg'),
+        name: 'GF Shampoo',
+        image: require('../assets/gf.jpg'),
+      },
+      {
+        name: 'Keratin Oil Shampoo',
+        image: require('../assets/keratin.jpg'),
       },
       {
         name: 'Shampoo',
@@ -223,6 +403,38 @@ const categories = [
         image: require('../assets/hair.jpg'),
       },
       {
+        name: 'Onion Oil',
+        image: require('../assets/onion-oil.jpg'),
+      },
+      {
+        name: 'Procsin Sun Cream',
+        image: require('../assets/procsin-sun.jpg'),
+      },
+      {
+        name: 'Dermokil Sun Cream',
+        image: require('../assets/dermokil-sun.jpg'),
+      },
+      {
+        name: 'Neutrogena Hydro Boost',
+        image: require('../assets/neutrogena.jpg'),
+      },
+      {
+        name: 'Nivea Make-Up Expert',
+        image: require('../assets/make-up.jpg'),
+      },
+      {
+        name: 'Cotton',
+        image: require('../assets/cotton.jpg'),
+      },
+      {
+        name: 'Majirel 5.55',
+        image: require('../assets/majirel.jpg'),
+      },
+      {
+        name: 'Inoa 7.1',
+        image: require('../assets/inoa.jpg'),
+      },
+      {
         name: 'Tooth Paste',
         image: require('../assets/paste.jpg'),
       },
@@ -230,10 +442,7 @@ const categories = [
         name: 'ToothBrush',
         image: require('../assets/brush.jpg'),
       },
-      {
-        name: 'Gilette',
-        image: require('../assets/gilette.jpg'),
-      },
+
       {
         name: 'Veet',
         image: require('../assets/veet.jpg'),
@@ -246,6 +455,27 @@ const categories = [
         name: 'Rexona Dedorant',
         image: require('../assets/dedorant.jpg'),
       },
+      {
+        name: 'Gilette',
+        image: require('../assets/gilette.jpg'),
+      },
+      {
+        name: 'Arko Men',
+        image: require('../assets/arko.jpg'),
+      },
+      {
+        name: 'Belux',
+        image: require('../assets/belux.jpg'),
+      },
+      {
+        name: 'Nivea Men Creme',
+        image: require('../assets/nivea-men.jpg'),
+      },
+      {
+        name: 'Hugo Boss',
+        image: require('../assets/hugo-boss.jpg'),
+      },
+
     ],
   },
   {
@@ -253,11 +483,11 @@ const categories = [
     image: require('../assets/pet.jpg'),
     products: [
       {
-        name: 'Pedigree -Beef Canned',
+        name: 'Beef Canned',
         image: require('../assets/pedigre.jpg'),
       },
       {
-        name: 'Pedigree -Chicken & Rice Dinner',
+        name: 'Rice Dinner',
         image: require('../assets/rice.png'),
       },
       {
@@ -268,6 +498,23 @@ const categories = [
         name: 'Dry Food (+1 year)',
         image: require('../assets/dry.jpg'),
       },
+      {
+        name: 'Enjoy Adult Cat Food',
+        image: require('../assets/adult.jpg'),
+      },
+      {
+        name: 'Magicsand Cat Litter',
+        image: require('../assets/magicsand.jpg'),
+      },
+      {
+        name: 'Eaysy Clean',
+        image: require('../assets/easy.jpg'),
+      },
+      {
+        name: 'Trendline Crystal Cat Litter',
+        image: require('../assets/trendline.jpg'),
+      },
+
       {
         name: 'Acana -Wild Coast',
         image: require('../assets/acana.jpg'),
@@ -280,12 +527,40 @@ const categories = [
         name: 'Budgie Crackers',
         image: require('../assets/budgie.jpg'),
       },
+
+
+      {
+        name: 'Backpack',
+        image: require('../assets/backpack.jpg'),
+      },
+      {
+        name: 'Hurricane Fur Wizard',
+        image: require('../assets/hur.jpg'),
+      },
+      {
+        name: 'Pro Line',
+        image: require('../assets/pro-line.jpg'),
+      },
+      {
+        name: 'Furminator',
+        image: require('../assets/furminator.jpg'),
+      },
     ],
   },
   {
     name: 'Mom & Baby',
     image: require('../assets/mom.jpg'),
     products: [
+      {
+        name: 'Baby Rocker',
+        image: require('../assets/babyrocker.jpg'),
+      },
+      {
+        name: 'Nursery Organizer',
+        image: require('../assets/nurseryorganizer.jpg'),
+      },
+
+
       {
         name: 'Diaper',
         image: require('../assets/diaper.jpg'),
@@ -294,18 +569,24 @@ const categories = [
         name: 'Wet Napkin',
         image: require('../assets/islak.jpg'),
       },
+
       {
-        name: 'Chick Toy Bottles - Baby Hair & Body Wash',
+        name: 'Babo Cleansing Wipes',
+        image: require('../assets/babo.jpg'),
+      },
+
+
+      {
+        name: 'Chick Toy Bottles',
         image: require('../assets/dalin.png'),
       },
       {
-        name: 'Dalin 100% Natural Cotton Buds With Safety Stopper',
-        image: require('../assets/kulak.jpg'),
-      },
-      
-      {
-        name: 'Dalin Baby Cologne (Original Smell & Floral) - 2 Pack',
+        name: 'Dalin Cologne',
         image: require('../assets/kolonya.jpg'),
+      },
+      {
+        name: 'Dalin Cotton',
+        image: require('../assets/kulak.jpg'),
       },
       {
         name: 'Aptamil',
@@ -315,6 +596,20 @@ const categories = [
         name: 'Hero Baby',
         image: require('../assets/hero.jpg'),
       },
+
+      {
+        name: 'Aveeno',
+        image: require('../assets/aveeno.jpg'),
+      },
+      {
+        name: 'Biberone',
+        image: require('../assets/biberone.jpg'),
+      },
+
+      {
+        name: 'Soundspa',
+        image: require('../assets/soundspa.jpg'),
+      },
     ],
   },
   
@@ -323,29 +618,80 @@ const categories = [
     image: require('../assets/elektronic.jpg'),
     products: [
       {
-        name: 'Earphone',
-        image: require('../assets/ear.jpg'),
+        name: 'Airpods Pro',
+        image: require('../assets/pro.jpg'),
       },
       {
-        name: 'Oral-B',
-        image: require('../assets/oral.jpg'),
+        name: 'Airpods',
+        image: require('../assets/air.jpg'),
       },
       {
-        name: 'Apple Usb-C Charge',
-        image: require('../assets/usb.jpg'),
+        name: 'Freebuds 4',
+        image: require('../assets/freebuds4.jpg'),
       },
+      {
+        name: 'T220-TWS',
+        image: require('../assets/t220-tws.jpg'),
+      },
+      {
+        name: 'JBL Red',
+        image: require('../assets/jbl.jpg'),
+      },
+      {
+        name: 'JBL Black',
+        image: require('../assets/jbl-black.jpg'),
+      },
+
+      {
+        name: 'Lenovo i5/12gb Ram',
+        image: require('../assets/lenovo.jpg'),
+      },
+      {
+        name: 'Macbook',
+        image: require('../assets/macbook.jpg'),
+      },
+      {
+        name: 'Macbook Pro 16gb',
+        image: require('../assets/mac.jpg'),
+      },
+      {
+        name: 'Apple Watch',
+        image: require('../assets/applewatch.jpg'),
+      },
+
       {
         name: 'Blow-Dryer',
         image: require('../assets/fon.jpg'),
       },
       {
-        name: 'Hair Straightener',
-        image: require('../assets/straight.jpg'),
+        name: 'Dyson Hair Care',
+        image: require('../assets/haircare.jpg'),
       },
+
+      {
+        name: 'Dyson Vacuum Cleaner',
+        image: require('../assets/dysonvacuumcleaner.jpg'),
+      },
+      {
+        name: 'Dyson Boat Vacuum',
+        image: require('../assets/boatvacuum.jpg'),
+      },
+      {
+        name: 'Dyson Gadgets',
+        image: require('../assets/gadgets.jpg'),
+      },
+      {
+        name: 'Oral-B Toothbrush',
+        image: require('../assets/oral.jpg'),
+      },
+      {
+        name: 'Apple Usb',
+        image: require('../assets/usb.jpg'),
+      },
+
     ],
   },
 ];
-
 // const categories = [
 //     {
 //         name: 'Food',

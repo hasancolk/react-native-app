@@ -4,7 +4,7 @@ import {colors} from '../../config/colors';
 export const homeStyles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'pink',
+        backgroundColor: 'white',
     }, 
     searchInput: {
         alignSelf: 'center',
@@ -14,7 +14,7 @@ export const homeStyles = StyleSheet.create({
         height: 1,
 
         marginTop: 36,
-        backgroundColor: colors.pink,
+        backgroundColor: colors.white,
     },
     Button: {
         position: 'absolute',
@@ -42,7 +42,7 @@ export const CategoryObjectStyles = StyleSheet.create({
     viewStyle: {
         borderWidth: 1,
         borderColor: 'gainsboro',
-        shadowColor: 'pink',
+        shadowColor: 'white',
         shadowOffset: {width: 1, height: 1},
         shadowOpacity: 0.1,
         marginLeft: 5,
@@ -60,7 +60,7 @@ export const CategoryObjectStyles = StyleSheet.create({
         width: 32,
         height: 20,
         borderRadius: 4,
-        backgroundColor: 'green',
+        backgroundColor: 'white',
     },
     
 });
